@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div class="vnos">
+    <div class="jumbotron">
+        <h1>Kalkulator</h1>
+            <form method="post" action="/">
+                <p><input name="prvi" placeholder="Prvo stevilo"></p>
+                <br>
+                <p><input name="drugi" placeholder="Drugo stevilo"></p>
+                <br>
+                <p><input name="operacija" placeholder=" +,  -,  *,  /"></p>
+                <br>
+                <button class="btn btn-primary btn-lg">Rezultat</button>
+            </form>
+        <h1>Rezultat je: {{ rezultat }}</h1>
+        <br>
+    <a href="/"><button class="btn btn-primary btn-lg">Naredi ponoven račun</button></a>
+    </div>
+</div>
+
+</body>
+</html>
