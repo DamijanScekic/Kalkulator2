@@ -42,7 +42,7 @@ class MainHandler(BaseHandler):
         elif operacija == "*":
             rezultat = int(prvo) * int(drugo)
         elif operacija == "/":
-            rezultat = int(prvo) / int(drugo)
+            rezultat = float(prvo) / float(drugo)
         params = {"rezultat": rezultat}
         self.render_template("hello.html", params)
 
